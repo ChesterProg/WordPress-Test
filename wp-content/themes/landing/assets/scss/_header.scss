@@ -1,0 +1,85 @@
+$header-width: 100%;
+
+.header {
+  width: $header-width;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+  .row {
+    align-items: center;
+  }
+
+  .container {
+    max-width: $header-width;
+
+    .col-6 {
+      text-align: center;
+      &:first-child {
+        @media (max-width: 768px) {
+          max-width: 25% !important;
+        }
+      }
+
+      .navigation {
+        display: flex;
+        align-items: center;
+
+        .feed {
+          display: flex;
+          .shop, .search {
+            width: 14px;
+            margin: 0 5px;
+            filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(6081%) hue-rotate(193deg) brightness(122%) contrast(100%);
+          }
+          .search {
+            content: url('../images/search.svg');
+          }
+          .shop {
+            content: url('../images/shopping-cart.svg');
+          }
+        }
+
+
+      .menu-list {
+        padding-left: 0;
+        margin: 0;
+        align-items: center;
+      }
+      }
+    }
+  }
+
+  .logo {
+    font: {
+      size: 30px;
+      family: Montserrat, serif;
+    }
+    color: white;
+  }
+
+  .menu-list {
+    display: flex;
+    list-style: none;
+
+    .link {
+      font: {
+        size: 14px;
+        family: Montserrat, serif;
+      }
+      color: white;
+      padding: 10px;
+
+      @media (max-width: 768px) {
+        font-size: 12px;
+        padding: 5px;
+      }
+
+      &:hover {
+        text-decoration: none;
+        border-bottom: 2px solid #FCE38A;
+        color: #FCE38A;
+      }
+    }
+  }
+}

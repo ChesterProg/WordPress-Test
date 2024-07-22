@@ -1,0 +1,116 @@
+.team-block {
+  max-width: 1024px;
+  margin: auto;
+  padding: 0 15px;
+
+  .title-block {
+    margin: auto;
+    max-width: 756px;
+    text-align: center;
+  }
+
+  .info-team-block {
+    display: flex;
+    justify-content: space-between;
+
+    .photo-block {
+      position: relative;
+      text-align: center;
+      width: 30%;
+      margin-bottom: 20px;
+
+      div {
+        position: relative;
+      }
+
+      .team-image {
+        transition: all 0.3s ease-in-out;
+        display: block;
+        width: 100%;
+      }
+
+      h5 {
+        margin-top: 30px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+
+        li {
+          display: inline-block;
+          margin: 5px;
+        }
+      }
+
+      div::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, red, yellow);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      &:hover {
+
+        div::before {
+          opacity: 0.6;
+        }
+
+        .team-image {
+          box-shadow: 10px 10px 0 0 #95E1D3;
+        }
+
+        ul {
+          display: flex;
+
+          li {
+              padding: 5px;
+              background: #FCE38A;
+              margin: 0;
+              border-right: 1px solid #F38181;
+            &:last-child {
+              border: 0;
+            }
+            a {
+              width: 26px;
+              background-size: cover;
+              filter: invert(76%) sepia(5%) saturate(7483%) hue-rotate(307deg) brightness(103%) contrast(93%);
+            }
+            .facebook {
+              content: url('../images/facebook.svg');
+            }
+            .twitter {
+              content: url('../images/twitter.svg');
+            }
+            .pinterest {
+              content: url('../images/pinterest.svg');
+            }
+            .instagram {
+              content: url('../images/instagram.svg');
+            }
+
+            &:hover {
+              background: #F38181;
+
+              a {
+              filter: invert(100%);
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

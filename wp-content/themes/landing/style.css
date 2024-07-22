@@ -1,0 +1,42 @@
+/*
+Theme Name: Landing
+Author: Custom
+Description: A custom WordPress theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+.hero-block {
+  position: relative;
+}
+
+.header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+}
+
+.navigation ul li {
+  margin-right: 20px;
+}
+
+.search-form {
+  margin-top: 20px;
+}
+
+* {
+  background: black;
+}
+body {
+  background: black;
+}
