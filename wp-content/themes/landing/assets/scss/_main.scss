@@ -4,6 +4,10 @@
 @import '_team.scss';
 @import '_latest.scss';
 
+html {
+  margin-top: 0 !important;
+}
+
 h1 {
   font-size: 150px !important;
   font-family: Montserrat, serif;
@@ -12,12 +16,12 @@ h1 {
 
 h2 {
   font-size: 72px !important;
-  font-family: KaushanScript Regular, serif;
+  font-family: 'Kaushan Script', cursive;
 }
 
 h3 {
   font-size: 30px !important;
-  font-family: KaushanScript Regular, serif;
+  font-family: 'Kaushan Script', serif
 }
 
 h4 {
@@ -37,7 +41,7 @@ h5 {
 
   h2 {
     font-size: 56px !important;
-    font-family: KaushanScript Regular, serif;
+    font-family: 'Kaushan Script', cursive;
   }
 }
 
@@ -49,7 +53,7 @@ h5 {
 
   h2 {
     font-size: 40px !important;
-    font-family: KaushanScript Regular, serif;
+    font-family: 'Kaushan Script', cursive;
   }
 }
 
@@ -61,7 +65,7 @@ h5 {
 
   h2 {
     font-size: 30px !important;
-    font-family: KaushanScript Regular, serif;
+    font-family: 'Kaushan Script', cursive;
   }
 }
 @media (max-width: 425px) {
@@ -72,7 +76,7 @@ h5 {
 
   h2 {
     font-size: 14px !important;
-    font-family: KaushanScript Regular, serif;
+    font-family: 'Kaushan Script', cursive;
   }
 }
 

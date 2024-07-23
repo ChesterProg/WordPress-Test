@@ -37,3 +37,8 @@ function create_team_post_type() {
 	);
 }
 add_action('init', 'create_team_post_type');
+
+function enqueue_montserrat_font() {
+	wp_enqueue_style('montserrat-font', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+}
+add_action('wp_enqueue_scripts', 'enqueue_montserrat_font');

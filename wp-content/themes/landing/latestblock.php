@@ -31,7 +31,7 @@
           <div class="counters">
             <div class="counter-block">
               <div class="eye"></div>
-              <span><?php echo pvc_get_post_views(get_the_ID()); ?></span>
+              <span><?php echo pvc_get_post_views(); ?></span>
             </div>
             <div class="counter-block">
               <div class="comments"></div>
