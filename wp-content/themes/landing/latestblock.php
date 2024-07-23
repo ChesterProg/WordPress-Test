@@ -47,7 +47,7 @@
   </div>
   <div>
     <?php if ($the_query->found_posts > 3) {
-      echo '<a class="view-all" href="' . get_post_type_archive_link('team') . '">View All</a>';
+	    echo '<a class="view-all" href="/team-archieve">View All</a>';
     }?>
   </div>
   <?php wp_reset_postdata(); ?>
